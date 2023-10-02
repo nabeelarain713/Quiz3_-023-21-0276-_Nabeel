@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+        
+</head>
+<body>
+    <div class="fluid-container login-container">
+        <div class="left-side">
+            <div class="pisocial">PiSocial</div>
+              <!-- Social Media Signup Options -->
+              <div class="social-icons">
+                <a href="#" class="btn btn-primary mb-2">
+                    <i class="fab fa-linkedin" style="background-color: #f4f4f4;"></i> Sign Up with LinkedIn
+                </a>
+                <a href="#" class="btn btn-info mb-2">
+                    <i class="fab fa-twitter" style="background-color: #f4f4f4;"></i> Sign Up with Twitter
+                </a>
+                <a href="#" class="btn btn-primary">
+                    <i class="fab fa-facebook" style="background-color: #f4f4f4;"></i> Sign Up with Facebook
+                </a>
+            </div>
+        </div>
+        <div class="right-side">
+            <img src="assets/image/Group 21.png" alt="Image Description" class="top-right-image" />
+            <h1 style="text-align: center;"><big>Sign Up</big></h1>
+            <p style="text-align: center;">Get started absolutely free</p>
+            
+
+            <!-- Signup Form -->
+            <div>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                </div>
+
+                 <!-- Terms of Service Message -->
+            <p class="terms-message">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input"
+                
+                <!-- Terms of Service Message with Checkbox -->
+
+                Creating an account means you're okay with our Terms of Service,
+                Privacy Policy, and default Notification Settings
+            </p>
+                <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+            </form>
+            </div>
+            <div>
+                <img src="assets/image/Group 21.png" alt="Image Description" class="bottom-left-image" />
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Find the form element by its ID
+            const form = document.getElementById('signupForm');
+    
+            // Add an event listener for the form's submit event
+            form.addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent the form from submitting normally
+    
+                // Get the values of the email and password fields
+                const emailValue = document.getElementById('email').value;
+                const passwordValue = document.getElementById('password').value;
+    
+                // Print the values to the console
+                console.log('Email:', emailValue);
+                console.log('Password:', passwordValue);
+            });
+        });
+    </script>
+
+    <!-- Bootstrap and Font Awesome Scripts -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
